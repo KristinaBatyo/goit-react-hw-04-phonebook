@@ -14,7 +14,6 @@ export const App = () =>  {
 
   useEffect(() => {
     window.localStorage.setItem('contacts', JSON.stringify(contacts));
-    console.log('contacts')
   }, [contacts])
   
 
@@ -24,7 +23,6 @@ export const App = () =>  {
       name,
       number,
     }
-    console.log(name);
     const contactName = [];
 
     for (const contact of contacts) {
