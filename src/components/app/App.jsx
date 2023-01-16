@@ -3,7 +3,6 @@ import { ContactsForm } from "components/form/ContactsForm";
 import { Filter } from "components/filter/Filter";
 import { nanoid } from "nanoid";
 import{AppContainer, Title} from './App.styled';
-import { PropTypes } from 'prop-types';
 import { useState, useEffect } from "react";
 
 export const App = () =>  {
@@ -70,17 +69,3 @@ export const App = () =>  {
 
     );
   }
-
-App.propTypes = {
-  contacts: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string,
-      name: PropTypes.string,
-      number: PropTypes.string,
-    })
-  ),
-  filter: PropTypes.string,
-  addContact: PropTypes.func,
-  delete: PropTypes.func,
-  changeFilter: PropTypes.func,
-};

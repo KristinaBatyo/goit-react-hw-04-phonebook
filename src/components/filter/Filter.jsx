@@ -16,6 +16,6 @@ import {FilterText, FilterContainer, FilterInput} from "./Filter.styled"
 
 
     Filter.propTypes = {
-        onChange: PropTypes.func,
-        value: PropTypes.string,
+        onChange: PropTypes.func.isRequired,
+        value: PropTypes.string.isRequired,
     }

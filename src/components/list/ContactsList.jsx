@@ -20,13 +20,13 @@ export const ContactsListRender = ({contacts, deleteContact}) => {
 
 };
 
-ContactsListRender.prototype = {
+ContactsListRender.propTypes = {
         contacts: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.string,
-            name: PropTypes.string,
-            number: PropTypes.string,
+            id: PropTypes.string.isRequired,
+            name: PropTypes.string.isRequired,
+            number: PropTypes.string.isRequired,
         })
         ),
-        deleteContact: PropTypes.func,
+        deleteContact: PropTypes.func.isRequired,
     };
